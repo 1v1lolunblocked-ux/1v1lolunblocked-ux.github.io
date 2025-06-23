@@ -211,6 +211,9 @@ ul.user-links li {
 .list-game {
   width: 100%;
 }
+.list-game .list-title{
+   color:  #ffde3a !important;
+}
 .list-game-x:hover {
   padding: 10px;
   background-color: #eef0f2;
