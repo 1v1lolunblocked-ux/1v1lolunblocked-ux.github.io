@@ -41,7 +41,28 @@ a:visited {
 }
 .dropdown-menu {
   background: #5A5A5A;
+  max-height: 100vh; /* Full screen height */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
+/* scrolling dropdown */
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+   display: none; /* Chrome, Safari */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: #3e3e3e;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+  
+}
+
+/* scrolling code is ended here */
 .dropdown-menu .dropdown-item {
   padding: 15px 25px;
   color: #ffba3a;
